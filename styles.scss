@@ -207,15 +207,16 @@ a:hover {
     @extend %bottomlinkscont;
     padding:0px 20px;
 }
-
 #info, #settings {
     @extend %bottomlinkscont;
-    
-    a {
-        padding: 15px;
-        font-size: 14px;
-        color: #70757a;
-    }
+}
+.otherlink, .advotherlink{
+    padding: 15px;
+    font-size: 14px;
+    color: #70757a;
+}
+.otherlink:hover {
+    color: #70757a;
 }
 .advotherlink:hover {
     color: #3c4043;

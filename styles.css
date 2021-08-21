@@ -203,9 +203,13 @@ a:hover {
   padding: 0px 20px;
 }
 
-#info a, #settings a {
+.otherlink, .advotherlink {
   padding: 15px;
   font-size: 14px;
+  color: #70757a;
+}
+
+.otherlink:hover {
   color: #70757a;
 }
 
