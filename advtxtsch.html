@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Google Advanced Search</title>
+        <link rel="icon" href="title icon.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <!--Top section of the web page-->
+        <div id="top">
+
+            <!--Google logo on top left-->
+            <div id="topleft">
+            <a href="index.html"><img id="advlogo" src="googlelogo.png" alt="Google" title="Go to Google Home"></a>
+            </div>
+            
+            <!--Top right section-->
+            <div id="topright">
+
+                <!--Links to other web pages-->
+                <a class="toplink" href="https://gmail.com">Gmail</a>
+                <a class="toplink" href="index.html">Google Search</a>
+                <a class="toplink" href="imgsch.html">Images</a>
+                
+                <!--Sign in and google apps button of top right section-->
+                <div id="appscont0">
+                    <div id="appscont1">
+                        <a href="https://about.google/products/"><img id="apps" src="google apps icon.png" alt="Google Apps" title="Google Apps"></a>
+                    </div>
+                </div>
+                <button id="signin">Sign in</button>
+            
+            </div>
+        
+        </div>
+
+        <!--Advanced search heading-->
+        <div id="advheading">Advanced Search</div>
+
+        <!--Middle section of the web page-->
+
+        <!--FORM-> Advance Search -> all these words: as_q; this exact word or phrase: as_epq; 
+            any of these words: as_oq; none of these words: as_eq; numbers ranging from: as_nlo TO as_nhi-->
+        <div id="advform">
+            <form action="https://google.com/search">
+
+                <!--Bootstrap grid for form layout-->
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-2" style="font-size: 16px; color: #333;">
+                          Find pages with...
+                        </div>
+                        <div class="col-5">
+                        </div>
+                        <!--lastcol for display none when screen size is small-->
+                        <div class="col lastcol" id="lastcolhead">
+                          To do this in the search box.
+                        </div>
+                      </div>
+
+                    <div class="row">
+                      <div class="col-2">
+                          all these words:
+                      </div>
+                      <div class="col-5">
+                          <input class="asinput" type="text" name="as_q" spellcheck="true">
+                      </div>
+                      <div class="col lastcol">
+                          Type the important words: <span class="font-monospace">tri-colour rat terrier</span>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-2">
+                            this exact word or phrase: 
+                        </div>
+                        <div class="col-5">
+                            <input class="asinput" type="text" name="as_epq" spellcheck="true">
+                        </div>
+                        <div class="col lastcol">
+                            Put exact words in quotes: <span class="font-monospace">"rat terrier"</span>
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="col-2">
+                            any of these words:  
+                        </div>
+                        <div class="col-5">
+                            <input class="asinput" type="text" name="as_oq" spellcheck="true">
+                        </div>
+                        <div class="col lastcol">
+                            Type OR between all the words you want: <span class="font-monospace">miniature OR standard</span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-2">
+                            none of these words: 
+                        </div>
+                        <div class="col-5">
+                            <input class="asinput" type="text" name="as_eq" spellcheck="true">
+                        </div>
+                        <div class="col lastcol" style="margin:0px;">
+                            Put a minus sign just before words that you don't want:<br><span class="font-monospace">-rodent, -"Jack Russell"</span>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-2" >
+                            numbers ranging from:
+                        </div>
+                        <div class="col-5">
+                            <!--Grid layout to arrange 2 input boxes within a column-->
+                            <div class="row">
+                                <div class="col" id="asno1">
+                                    <input class="asinput" type="text" name="as_nlo" spellcheck="true">
+                                </div>
+                                <div class="col" style="text-align: center; padding: 0px;">
+                                    <span id="to">to</span>
+                                </div>
+                                <div class="col" id="asno2">
+                                    <input class="asinput" type="text" name="as_nhi" spellcheck="true">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col lastcol" style="margin:0px;">
+                            Put two full stops between the numbers and add a unit of measurement: <span class="font-monospace">10..35 kg, £300..£500, 2010..2011</span>
+                        </div>
+                      </div>
+
+                      <!--Last row for adv search submit button-->
+                      <div class="row">
+                        <div class="col-2">
+                        </div>
+                        <div class="col-5">
+                            <input id="advsubmit" type="submit" value="Advanced Search">
+                        </div>
+                        <div class="col lastcol">
+                        </div>
+                      </div>
+
+                  </div>
+
+            </form>
+        </div>
+
+        <!--Links to customise advance search (Also adjusts bottom section's vertical placement)-->
+        <div id="aslinkcont">
+            <div style="font-size: 16px; color: #333; margin:20px 0px 15px 0px;">You can also:</div>
+            <a href="https://support.google.com/websearch?p=adv_pages_similar">Find pages that are similar to a URL</a>
+            <a href="https://support.google.com/websearch?p=adv_pages_visited">Search pages that you've visited</a>
+            <a href="https://support.google.com/websearch?p=adv_operators">Use operators in the search box</a>
+            <a href="https://www.google.com/preferences">Customise your search settings</a><br>
+            <a href="advimgsch.html" style="font-size:20px;">Advanced Image Search</a>
+        </div>
+
+        <!--Bottom section of the web page-->
+        <div id="bottom">
+
+            <div id="country" style="padding-left: 35px;">
+                India
+            </div>
+            
+            <!--Links to google information center and settings-->
+            <div id="other" style="justify-content: left;">
+                <div id="settings" style="justify-content: left;">
+                    <a class="advotherlink" href="https://support.google.com/websearch">Help</a>
+                    <a class="advotherlink" href="https://policies.google.com/privacy">Privacy</a>
+                    <a class="advotherlink" href="https://policies.google.com/terms">Terms</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+
+</html>

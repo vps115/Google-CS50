@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Google Images</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" href="title icon.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+
+        <!--Top section of the web page-->
+        <div id="top">
+
+            <!--For google logo on top left in adv search-->
+            <div id="topleft">
+            </div>
+            
+            <!--Top right section-->
+            <div id="topright">
+
+                <!--Links to other web pages-->
+                <a class="toplink" href="https://gmail.com">Gmail</a>
+                <a class="toplink" href="index.html">Google Search</a>
+                <a class="toplink" href="advimgsch.html">Advanced Search</a>
+
+                <!--Sign in and google apps button of top right section-->
+                <div id="appscont0">
+                    <div id="appscont1">
+                        <a href="https://about.google/products/"><img id="apps" src="google apps icon.png" alt="Google Apps" title="Google Apps"></a>
+                    </div>
+                </div>
+                <button id="signin">Sign in</button>
+
+            </div>
+        
+        </div>
+
+        <!--Middle section of the web page-->
+
+        <!--Google logo and text "images" above search bar (Height because less than that in normal search)-->
+        <div id="logocont" style="height: 25%;">
+            <img id="logo" src="googlelogo.png" alt="Google" style="user-select: none;">
+            <div id="imagestxt">images</div>
+        </div>
+
+        <!-- FORM-> image query: q; name=tbm value=isch-->
+        <div id="form">
+            <form action="https://google.com/search">
+
+                <!--Search bar with input box, submit button and other icons -->
+                <div id="qinputcont">
+
+                    <div class="schbariconcont">
+                        <img style="cursor: default;" class="schbaricon" src="search icon.png">
+                    </div>
+
+                    <input id = "qinput" type="text" name="q" spellcheck="true">
+                    <input type="hidden" name="tbm" value="isch">
+
+                    <div class="schbariconcont">
+                        <img class="schbaricon" src="camera icon.png" alt="Search by Image" title="Search by Image">
+                    </div>
+
+                    <div class="schbariconcont">
+                        <img class="schbaricon" src="voice icon.png" alt="Voice Search" title="Search by Voice">
+                    </div>
+                    
+                    <!--Submit button-->
+                    <div class="schbariconcont">
+                        <input type="image" class="schbaricon" src="image search button.png" title="Image Search" alt="Image Search">
+                    </div>
+                    
+                </div>
+                      
+            </form>
+        </div>
+
+        <!--Empty space to adjust bottom section's vertical placement-->
+        <div id="langlinkcont"></div>
+        
+        <!--Bottom section of the web page-->
+        <div id="bottom">
+        
+            <div id="country">
+                India
+            </div>
+            
+            <!--Links to google information center and settings-->
+            <div id="other">
+                <div id="info">
+                    <a href="https://ads.google.com">Advertising</a>
+                    <a href="https://www.google.com/business">Business</a>
+                    <a href="https://about.google">About</a>
+                    <a href="https://www.google.com/search/howsearchworks/">How Search Works</a>
+                </div>
+                <div id="settings">
+                    <a href="https://policies.google.com/privacy">Privacy</a>
+                    <a href="https://policies.google.com/terms">Terms</a>
+                    <a href="https://www.google.com/preferences">Settings</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </body>
+    
+</html>

@@ -1,0 +1,420 @@
+.container, body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.qsubmit, .schbaricon, #apps, #signin, #top {
+  cursor: pointer;
+  user-select: none;
+}
+
+#appscont1, #appscont0, #apps {
+  height: 20px;
+  width: 20px;
+}
+
+#info, #settings, #other {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#advsubmit:active, #advsubmit:hover {
+  background-color: #357ae8;
+  border: 1px solid #2f5bb7;
+}
+
+/*Overrides bootstrap box-sizing:border-box*/
+*, ::after, ::before {
+  box-sizing: content-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: initial;
+}
+
+#top {
+  display: flex;
+  height: 5%;
+  padding: 12px 16px;
+  font-size: small;
+  justify-content: space-between;
+}
+
+.toplink {
+  color: black;
+  padding-left: 15px;
+}
+
+#signin {
+  margin-left: 7px;
+  padding: 9px 23px;
+  background-color: #1a73e8;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: small;
+  color: white;
+}
+
+#signin:hover {
+  background-color: #2b7de9;
+  box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3), 0 1px 3px 1px rgba(66, 133, 244, 0.15);
+}
+
+#signin:active {
+  background-color: #63a0ef;
+  box-shadow: 0 1px 2px 0 rgba(66, 133, 244, 0.3), 0 1px 3px 1px rgba(66, 133, 244, 0.15);
+}
+
+#appscont0 {
+  display: inline;
+  margin-left: 7px;
+}
+
+#appscont1 {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+#appscont1:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+}
+
+#appscont1:active {
+  background-color: rgba(60, 64, 67, 0.12);
+}
+
+#logocont {
+  display: flex;
+  flex-direction: column;
+  height: 31.5%;
+  min-height: 120px;
+  width: fit-content;
+  margin: auto;
+}
+
+#logo {
+  height: 92px;
+  margin-top: auto;
+  object-fit: contain;
+}
+
+#form {
+  padding: 25px 25px 15px 25px;
+}
+
+#qinputcont {
+  display: flex;
+  height: 44px;
+  width: auto;
+  max-width: 584px;
+  margin: auto;
+  background-color: #fff;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+}
+
+#qinputcont:hover, #qinputcont:focus-within {
+  box-shadow: 0px 1px 6px rgba(32, 33, 36, 0.28);
+  border-color: rgba(223, 225, 229, 0);
+}
+
+#qinput {
+  height: 34px;
+  width: 100%;
+  margin: auto;
+  background: transparent;
+  font-size: medium;
+  color: rgba(0, 0, 0, 0.87);
+  border: none;
+  outline: none;
+}
+
+.schbariconcont {
+  padding: 12px 15px;
+}
+
+.schbaricon {
+  height: 22px;
+}
+
+.qsubmit {
+  height: 36px;
+  margin: 30px 4px 12px 4px;
+  padding: 0 16px;
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #3c4043;
+}
+
+.qsubmit:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+.qsubmit:focus {
+  border: 1px solid #4285f4;
+}
+
+#langlinkcont {
+  margin-bottom: 24px;
+  text-align: center;
+  font-size: small;
+  flex-grow: 1;
+}
+#langlinkcont a {
+  padding: 0px 3px;
+  color: #1a0dab;
+}
+
+#bottom {
+  background: #f2f2f2;
+}
+
+#country {
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: medium;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+#other {
+  padding: 0px 20px;
+}
+
+#info a, #settings a {
+  padding: 15px;
+  font-size: 14px;
+  color: #70757a;
+}
+
+.advotherlink:hover {
+  color: #3c4043;
+  text-decoration: none;
+}
+
+#imagestxt {
+  margin-top: -16px;
+  width: 98%;
+  font-size: medium;
+  color: #4285f4;
+  text-align: right;
+}
+
+#advlogo {
+  height: 24px;
+  width: 74px;
+  padding: 10px 4px;
+}
+
+#advheading {
+  padding: 20px 45px;
+  border-bottom: 1px solid #ebebeb;
+  font-size: 20px;
+  color: #d93025;
+}
+
+#advform {
+  margin: 32px 2% 0px 45px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.col-2 {
+  min-width: 160px;
+  padding-top: 14px;
+  padding-bottom: 8px;
+  font-size: small;
+  color: #222;
+}
+
+.col-5 {
+  padding: 8px 5px;
+}
+
+.col {
+  margin: 6px 0px;
+  padding: 8px 14px;
+  font-size: 11px;
+  color: #555;
+}
+
+#lastcolhead {
+  margin-left: -10px;
+  font-size: small;
+  font-weight: 700;
+  color: #777;
+}
+
+.font-monospace {
+  color: #666;
+}
+
+.asinput {
+  height: 25px;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  border-top: 1px solid #c0c0c0;
+  border-radius: 1px;
+  font-size: small;
+  outline: none;
+}
+
+.asinput:focus {
+  border: 1px solid #4d90fe;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#asno1, #asno2 {
+  margin: 0px;
+  padding: 0px 11px;
+}
+
+#to {
+  font-size: small;
+  color: #202124;
+  text-align: center;
+}
+
+.radioinput {
+  padding: 0px 14px;
+  font-size: 14px;
+  color: black;
+}
+
+.radioinputtxt {
+  display: flex;
+  margin-top: -23px;
+  margin-left: 16px;
+}
+
+#advsubmit {
+  float: right;
+  height: 30px;
+  width: 100px;
+  margin-right: -5px;
+  background-color: #4d90fe;
+  border: 1px solid #3079ed;
+  font-size: 11px;
+  font-weight: bold;
+  color: #fff;
+  cursor: default;
+}
+
+#advsubmit:active {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#aslinkcont {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  min-height: 180px;
+  margin: 0px 2% 20px 45px;
+  font-size: small;
+  flex-grow: 1;
+}
+#aslinkcont a {
+  color: #1122cc;
+}
+
+@media only screen and (max-width: 1200px) {
+  .other {
+    justify-content: space-evenly;
+  }
+}
+@media (min-width: 1200px) {
+  #asno1 {
+    margin-right: -100px;
+  }
+
+  #asno2 {
+    margin-left: -105px;
+  }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  #asno1 {
+    margin-right: -80px;
+  }
+
+  #asno2 {
+    margin-left: -85px;
+  }
+}
+@media (max-width: 993px) {
+  #asno1 {
+    margin-right: -20px;
+  }
+
+  #asno2 {
+    margin-left: -25px;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  .lastcol {
+    display: none;
+  }
+}
+@media (max-width: 476px) {
+  #appscont0, #appscont1, #apps {
+    display: none;
+  }
+
+  #signin {
+    padding: 5px 5px;
+    font-size: x-small;
+    margin-left: 5px;
+  }
+
+  .toplink {
+    padding-left: 10px;
+  }
+
+  .schbaricon {
+    height: 15px;
+  }
+
+  .schbariconcont {
+    padding: 15px 10px;
+  }
+
+  #logo {
+    height: 75px;
+  }
+
+  #imagestxt {
+    font-size: small;
+  }
+
+  #advlogo {
+    height: 20px;
+    width: 65px;
+    padding: 2px 4px;
+  }
+
+  .qsubmit {
+    height: 30px;
+    margin: 25px 4px 12px 4px;
+    padding: 0 10px;
+    font-size: small;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
