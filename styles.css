@@ -440,6 +440,10 @@ a:hover {
   #qinput {
     height: 30px;
   }
+
+  #qinput::-webkit-search-cancel-button {
+    height: 23px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
