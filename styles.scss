@@ -150,7 +150,16 @@ a:hover {
     color: rgba(0,0,0,87%);
     border: none;
     outline: none;
-}  
+}
+
+#qinput::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    -webkit-user-modify: read-write !important;
+    height: 28px;
+    content: url("clear button.png");
+    @extend %cursorandselection;
+    margin-left: 10px;
+}
 
 .schbariconcont {
     padding: 10px 15px;

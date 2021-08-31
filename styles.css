@@ -5,7 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.qsubmit, .schbaricon, #apps, #signin, #top {
+.qsubmit, .schbaricon, #qinput::-webkit-search-cancel-button, #apps, #signin, #top {
   cursor: pointer;
   user-select: none;
 }
@@ -146,6 +146,14 @@ a:hover {
   color: rgba(0, 0, 0, 0.87);
   border: none;
   outline: none;
+}
+
+#qinput::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  -webkit-user-modify: read-write !important;
+  height: 28px;
+  content: url("clear button.png");
+  margin-left: 10px;
 }
 
 .schbariconcont {
